@@ -9,17 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: Properties
 
+    var viewModel = MyViewModel(title: "my view model")
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    // MARK: Managing the View
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        RAC(titleLabel, "text") ~> RACObserve(viewModel, "title").doNext({ [unowned self] _ in
+            println("Label: \(self.titleLabel.text)")
+        })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: Actions
+    
+    @IBAction func dismiss(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
-
-
+    
 }
 

@@ -7,25 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86E9F5E9643847FFD9ADC058 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44400E0132B3633BC04EFDE4 /* libPods.a */; };
 		A1C01A501A118DA3008C34EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C01A4F1A118DA3008C34EE /* AppDelegate.swift */; };
 		A1C01A521A118DA3008C34EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C01A511A118DA3008C34EE /* ViewController.swift */; };
 		A1C01A551A118DA3008C34EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C01A531A118DA3008C34EE /* Main.storyboard */; };
 		A1C01A571A118DA3008C34EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C01A561A118DA3008C34EE /* Images.xcassets */; };
 		A1C01A5A1A118DA3008C34EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C01A581A118DA3008C34EE /* LaunchScreen.xib */; };
-		A1C01A661A118DA4008C34EE /* ViewModelMemoryManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C01A651A118DA4008C34EE /* ViewModelMemoryManagementTests.swift */; };
+		A1C01A771A118F06008C34EE /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C01A761A118F06008C34EE /* MyViewModel.swift */; };
+		A1C01A7C1A1190D8008C34EE /* RACSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C01A7B1A1190D8008C34EE /* RACSwift.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A1C01A601A118DA4008C34EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1C01A421A118DA3008C34EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1C01A491A118DA3008C34EE;
-			remoteInfo = ViewModelMemoryManagement;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		327A09335EA245F61276B931 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		44400E0132B3633BC04EFDE4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C01A4A1A118DA3008C34EE /* ViewModelMemoryManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewModelMemoryManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C01A4E1A118DA3008C34EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C01A4F1A118DA3008C34EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +27,12 @@
 		A1C01A541A118DA3008C34EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1C01A561A118DA3008C34EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1C01A591A118DA3008C34EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A1C01A5F1A118DA4008C34EE /* ViewModelMemoryManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewModelMemoryManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C01A641A118DA4008C34EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C01A651A118DA4008C34EE /* ViewModelMemoryManagementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelMemoryManagementTests.swift; sourceTree = "<group>"; };
+		A1C01A6F1A118DC6008C34EE /* ViewModelMemoryManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewModelMemoryManagement-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1C01A761A118F06008C34EE /* MyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
+		A1C01A7B1A1190D8008C34EE /* RACSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACSwift.swift; sourceTree = "<group>"; };
+		E253F25CCD1B6F73879A489B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,25 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1C01A5C1A118DA4008C34EE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				86E9F5E9643847FFD9ADC058 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87897D5BED2DE81AFA71BFA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E253F25CCD1B6F73879A489B /* Pods.debug.xcconfig */,
+				327A09335EA245F61276B931 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A1C01A411A118DA3008C34EE = {
 			isa = PBXGroup;
 			children = (
 				A1C01A4C1A118DA3008C34EE /* ViewModelMemoryManagement */,
 				A1C01A621A118DA4008C34EE /* ViewModelMemoryManagementTests */,
 				A1C01A4B1A118DA3008C34EE /* Products */,
+				87897D5BED2DE81AFA71BFA8 /* Pods */,
+				C2AF577C096F395300642271 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				A1C01A4A1A118DA3008C34EE /* ViewModelMemoryManagement.app */,
-				A1C01A5F1A118DA4008C34EE /* ViewModelMemoryManagementTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,10 +80,13 @@
 			children = (
 				A1C01A4F1A118DA3008C34EE /* AppDelegate.swift */,
 				A1C01A511A118DA3008C34EE /* ViewController.swift */,
+				A1C01A761A118F06008C34EE /* MyViewModel.swift */,
+				A1C01A7B1A1190D8008C34EE /* RACSwift.swift */,
 				A1C01A531A118DA3008C34EE /* Main.storyboard */,
 				A1C01A561A118DA3008C34EE /* Images.xcassets */,
 				A1C01A581A118DA3008C34EE /* LaunchScreen.xib */,
 				A1C01A4D1A118DA3008C34EE /* Supporting Files */,
+				A1C01A6F1A118DC6008C34EE /* ViewModelMemoryManagement-Bridging-Header.h */,
 			);
 			path = ViewModelMemoryManagement;
 			sourceTree = "<group>";
@@ -112,6 +116,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C2AF577C096F395300642271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44400E0132B3633BC04EFDE4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1C01A691A118DA4008C34EE /* Build configuration list for PBXNativeTarget "ViewModelMemoryManagement" */;
 			buildPhases = (
+				DAE23C3AACFD5407C62B6C27 /* Check Pods Manifest.lock */,
 				A1C01A461A118DA3008C34EE /* Sources */,
 				A1C01A471A118DA3008C34EE /* Frameworks */,
 				A1C01A481A118DA3008C34EE /* Resources */,
+				A5E6DA9C76E8B10F229B51AE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,24 +145,6 @@
 			productName = ViewModelMemoryManagement;
 			productReference = A1C01A4A1A118DA3008C34EE /* ViewModelMemoryManagement.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A1C01A5E1A118DA4008C34EE /* ViewModelMemoryManagementTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1C01A6C1A118DA4008C34EE /* Build configuration list for PBXNativeTarget "ViewModelMemoryManagementTests" */;
-			buildPhases = (
-				A1C01A5B1A118DA4008C34EE /* Sources */,
-				A1C01A5C1A118DA4008C34EE /* Frameworks */,
-				A1C01A5D1A118DA4008C34EE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1C01A611A118DA4008C34EE /* PBXTargetDependency */,
-			);
-			name = ViewModelMemoryManagementTests;
-			productName = ViewModelMemoryManagementTests;
-			productReference = A1C01A5F1A118DA4008C34EE /* ViewModelMemoryManagementTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -161,10 +157,6 @@
 				TargetAttributes = {
 					A1C01A491A118DA3008C34EE = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					A1C01A5E1A118DA4008C34EE = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = A1C01A491A118DA3008C34EE;
 					};
 				};
 			};
@@ -182,7 +174,6 @@
 			projectRoot = "";
 			targets = (
 				A1C01A491A118DA3008C34EE /* ViewModelMemoryManagement */,
-				A1C01A5E1A118DA4008C34EE /* ViewModelMemoryManagementTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,42 +189,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1C01A5D1A118DA4008C34EE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5E6DA9C76E8B10F229B51AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		DAE23C3AACFD5407C62B6C27 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1C01A461A118DA3008C34EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C01A7C1A1190D8008C34EE /* RACSwift.swift in Sources */,
 				A1C01A521A118DA3008C34EE /* ViewController.swift in Sources */,
 				A1C01A501A118DA3008C34EE /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1C01A5B1A118DA4008C34EE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1C01A661A118DA4008C34EE /* ViewModelMemoryManagementTests.swift in Sources */,
+				A1C01A771A118F06008C34EE /* MyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A1C01A611A118DA4008C34EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1C01A491A118DA3008C34EE /* ViewModelMemoryManagement */;
-			targetProxy = A1C01A601A118DA4008C34EE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A1C01A531A118DA3008C34EE /* Main.storyboard */ = {
@@ -293,6 +296,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ViewModelMemoryManagement/ViewModelMemoryManagement-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -328,61 +332,33 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ViewModelMemoryManagement/ViewModelMemoryManagement-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		A1C01A6A1A118DA4008C34EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E253F25CCD1B6F73879A489B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ViewModelMemoryManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A1C01A6B1A118DA4008C34EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327A09335EA245F61276B931 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ViewModelMemoryManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A1C01A6D1A118DA4008C34EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ViewModelMemoryManagementTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewModelMemoryManagement.app/ViewModelMemoryManagement";
-			};
-			name = Debug;
-		};
-		A1C01A6E1A118DA4008C34EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ViewModelMemoryManagementTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewModelMemoryManagement.app/ViewModelMemoryManagement";
 			};
 			name = Release;
 		};
@@ -405,14 +381,7 @@
 				A1C01A6B1A118DA4008C34EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		A1C01A6C1A118DA4008C34EE /* Build configuration list for PBXNativeTarget "ViewModelMemoryManagementTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1C01A6D1A118DA4008C34EE /* Debug */,
-				A1C01A6E1A118DA4008C34EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
